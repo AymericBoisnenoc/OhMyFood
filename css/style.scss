@@ -689,7 +689,7 @@ h2, h3,.price {
     .restaurant__title i {
         position: relative;
         top: 29%;
-        right: 100%;
+        right: 0;
     }
     .restaurant__title h2 {
             padding-left: 5%;
@@ -754,7 +754,7 @@ h2, h3,.price {
         bottom: 44%;
     }
     .menu__content:active .price {
-        transform: translateX(-13.5%);
+        transform: translateX(-15.5%);
         transition: transform 0.2s ease;
     }
     .menu__content:not(:active) .price {
