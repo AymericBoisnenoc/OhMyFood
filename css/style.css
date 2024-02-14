@@ -553,6 +553,7 @@ h2, h3, .price {
   .icon-placeholder i {
     left: 35%;
     bottom: 0;
+    top: 48px;
   }
   input {
     width: 100%;
