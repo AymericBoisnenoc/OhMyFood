@@ -734,7 +734,7 @@ h2, h3,.price {
         text-overflow: ellipsis;
         max-width: calc(100% - 60px); /* Ajustez la valeur en fonction de l'espace que vous voulez laisser pour le prix */
         } 
-    .menu__content:active .menu__p2 {
+    .menu__content:focus .menu__p2 {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -756,17 +756,15 @@ h2, h3,.price {
         left: 72.5%;
         bottom: 44%;
     }
+    .menu__content:focus .price,
     .menu__content:active .price {
-        transform: translateX(-15.5%);
+        transform: translateX(-20%);
         transition: transform 0.2s ease;
     }
-    .menu__content:not(:active) .price {
-        transform: translateX(0); /* Remettre l'élément à sa position initiale */
+    
+    .menu__content:not(:focus) .price {
+        transform: translateX(0);
         transition: transform 0.2s ease;
-    }
-    .menu__content .price:hover{
-        transform: none; /* Réinitialise la transformation */
-        transition: transform 0.2s ease-out; /* Transition inverse */
     }
    
     .icon-container {
@@ -790,6 +788,7 @@ h2, h3,.price {
     }
 
         /* Effet de survol pour l'icône */
+    .menu__content:focus .icon-container,
     .menu__content:active .icon-container {
             transform: translateX(-72px); /* Animation de glissement de droite à gauche */
             opacity: 1; /* Rend l'icône visible lors du survol */
